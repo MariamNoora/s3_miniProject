@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TerrainAlert - Landslide Risk Detection for Kerala</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>⛰️TerrainAlert</h1>
+      <p>Real-time Landslide Risk Awareness for Kerala</p>
+    </div>
+  </header>
+
+  <section class="main-content">
+    <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="🔍 Search a place in Kerala..."
+          onkeyup="showSuggestions(this.value)"
+          autocomplete="off"
+        />
+        <button onclick="searchLocation()">Check Risk</button>
+        <ul id="suggestions"></ul>
+      </div>
+      
+
+    <div id="result-box"></div>
+
+    <div id="map-placeholder">
+      <p>🗺️ Interactive landslide risk map will be shown here.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TerrainAlert | MCA Mini Project | Kerala Tech Watch</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
