@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bf470371762837d6716fb031bb2c83dc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bf470371762837d6716fb031bb2c83dc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bf470371762837d6716fb031bb2c83dc = L.map(
+                "map_bf470371762837d6716fb031bb2c83dc",
+                {
+                    center: [10.5, 76.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d7c36ec0b436118d3602a3cf0eb7a40 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2d7c36ec0b436118d3602a3cf0eb7a40.addTo(map_bf470371762837d6716fb031bb2c83dc);
+        
+    
+            var marker_cluster_24718e0554af4a1426a44d1fa6b73740 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_45369f331cf3f59d7d813a6ec8e2a7d2 = L.marker(
+                [10.1694444555556, 77.0608333222222],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_67f8fc9b01c0d333191c7756b7ce6944 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34aac0688bcf5e2b443baaf0ac11feab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22ffe32ab3ee5f942b64c82cd9836b29 = $(`<div id="html_22ffe32ab3ee5f942b64c82cd9836b29" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Devikulam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_34aac0688bcf5e2b443baaf0ac11feab.setContent(html_22ffe32ab3ee5f942b64c82cd9836b29);
+            
+        
+
+        marker_45369f331cf3f59d7d813a6ec8e2a7d2.bindPopup(popup_34aac0688bcf5e2b443baaf0ac11feab)
+        ;
+
+        
+    
+    
+                marker_45369f331cf3f59d7d813a6ec8e2a7d2.setIcon(icon_67f8fc9b01c0d333191c7756b7ce6944);
+            
+    
+            var marker_67f655043a67a3c0ffd438dbd0e31812 = L.marker(
+                [10.1666666777778, 77.0580555444444],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_0ff527f6bbda5de0c8667ac2354e148e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e63b392a3078152c9bc2b5532643bc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe4550041b5e791ac3bc3daae196be13 = $(`<div id="html_fe4550041b5e791ac3bc3daae196be13" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Devikulam<br>         <b>Place:</b> Munnar<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_5e63b392a3078152c9bc2b5532643bc3.setContent(html_fe4550041b5e791ac3bc3daae196be13);
+            
+        
+
+        marker_67f655043a67a3c0ffd438dbd0e31812.bindPopup(popup_5e63b392a3078152c9bc2b5532643bc3)
+        ;
+
+        
+    
+    
+                marker_67f655043a67a3c0ffd438dbd0e31812.setIcon(icon_0ff527f6bbda5de0c8667ac2354e148e);
+            
+    
+            var marker_cca5b33b24c56287fcdaea731c2bead5 = L.marker(
+                [11.2916666777778, 76.5580555444444],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_92cfa5a666a3972c9e032b8912726638 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2198d467434c2815894180f0d7751b2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bb62ee6758d5e5ffc821e55532bb9dd = $(`<div id="html_8bb62ee6758d5e5ffc821e55532bb9dd" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kundah<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_2198d467434c2815894180f0d7751b2e.setContent(html_8bb62ee6758d5e5ffc821e55532bb9dd);
+            
+        
+
+        marker_cca5b33b24c56287fcdaea731c2bead5.bindPopup(popup_2198d467434c2815894180f0d7751b2e)
+        ;
+
+        
+    
+    
+                marker_cca5b33b24c56287fcdaea731c2bead5.setIcon(icon_92cfa5a666a3972c9e032b8912726638);
+            
+    
+            var marker_d1a2d177ead5bb605c46f5975d3eef5f = L.marker(
+                [11.4027777888889, 76.7386111],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_e16fc4317767d9744471fb6588ea9ab7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e11561710ecc5d696da19ba16056e3b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a6aa4e877966a6ea65900545babccb4 = $(`<div id="html_2a6aa4e877966a6ea65900545babccb4" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_e11561710ecc5d696da19ba16056e3b2.setContent(html_2a6aa4e877966a6ea65900545babccb4);
+            
+        
+
+        marker_d1a2d177ead5bb605c46f5975d3eef5f.bindPopup(popup_e11561710ecc5d696da19ba16056e3b2)
+        ;
+
+        
+    
+    
+                marker_d1a2d177ead5bb605c46f5975d3eef5f.setIcon(icon_e16fc4317767d9744471fb6588ea9ab7);
+            
+    
+            var marker_7eedfc497ee8ec5f439f395aaa1d9b1f = L.marker(
+                [11.4027777888889, 76.7358333222222],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_d08249d31d5ae55cf561f8c24e6632a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5455c808acad016146059fcaa50076b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b6302c5adcbc666be1bb6255e016fc6 = $(`<div id="html_3b6302c5adcbc666be1bb6255e016fc6" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_5455c808acad016146059fcaa50076b0.setContent(html_3b6302c5adcbc666be1bb6255e016fc6);
+            
+        
+
+        marker_7eedfc497ee8ec5f439f395aaa1d9b1f.bindPopup(popup_5455c808acad016146059fcaa50076b0)
+        ;
+
+        
+    
+    
+                marker_7eedfc497ee8ec5f439f395aaa1d9b1f.setIcon(icon_d08249d31d5ae55cf561f8c24e6632a5);
+            
+    
+            var marker_4e2130b0f10aed3e1b55da4d47c6e5d5 = L.marker(
+                [11.4000000111111, 76.7358333222222],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_e4e2bf222c1ad7d98235fbce2ac0f8e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_933c7659da29ea6d6974f1670ebf2a74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_122990c2ce56d9a81ed4afd6559d06e1 = $(`<div id="html_122990c2ce56d9a81ed4afd6559d06e1" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_933c7659da29ea6d6974f1670ebf2a74.setContent(html_122990c2ce56d9a81ed4afd6559d06e1);
+            
+        
+
+        marker_4e2130b0f10aed3e1b55da4d47c6e5d5.bindPopup(popup_933c7659da29ea6d6974f1670ebf2a74)
+        ;
+
+        
+    
+    
+                marker_4e2130b0f10aed3e1b55da4d47c6e5d5.setIcon(icon_e4e2bf222c1ad7d98235fbce2ac0f8e4);
+            
+    
+            var marker_8a77456e8ccc057d37e9bcdb8d0da821 = L.marker(
+                [10.1666666777778, 77.0608333222222],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_7d21d7d72bc1770cab1a01d4e24ff43a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e289505e3586ca2f76be373da7c6d8fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36d775d3710a2e5973ece986f63ca2c8 = $(`<div id="html_36d775d3710a2e5973ece986f63ca2c8" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Devikulam<br>         <b>Place:</b> Munnar<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_e289505e3586ca2f76be373da7c6d8fe.setContent(html_36d775d3710a2e5973ece986f63ca2c8);
+            
+        
+
+        marker_8a77456e8ccc057d37e9bcdb8d0da821.bindPopup(popup_e289505e3586ca2f76be373da7c6d8fe)
+        ;
+
+        
+    
+    
+                marker_8a77456e8ccc057d37e9bcdb8d0da821.setIcon(icon_7d21d7d72bc1770cab1a01d4e24ff43a);
+            
+    
+            var marker_47fe6b6526682ac7aee474100cd00b62 = L.marker(
+                [11.4083333444444, 76.7302777666667],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_d96227a6e113568701c3f93ba030df19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4fd569317c479f8d4e5294f52e51ef5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1b161520262e780bac71ede6fc500bd = $(`<div id="html_e1b161520262e780bac71ede6fc500bd" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Buttercombai<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_d4fd569317c479f8d4e5294f52e51ef5.setContent(html_e1b161520262e780bac71ede6fc500bd);
+            
+        
+
+        marker_47fe6b6526682ac7aee474100cd00b62.bindPopup(popup_d4fd569317c479f8d4e5294f52e51ef5)
+        ;
+
+        
+    
+    
+                marker_47fe6b6526682ac7aee474100cd00b62.setIcon(icon_d96227a6e113568701c3f93ba030df19);
+            
+    
+            var marker_43ed66530f421ab242dc2182ceaffec9 = L.marker(
+                [11.2916666777778, 76.5552777666667],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_d6edc181340f3725fcf48abac0bfb11d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5189f12c939a3fd9e13a59e10384c21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_322eca6799c8b79280554887a99a3491 = $(`<div id="html_322eca6799c8b79280554887a99a3491" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kundah<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_e5189f12c939a3fd9e13a59e10384c21.setContent(html_322eca6799c8b79280554887a99a3491);
+            
+        
+
+        marker_43ed66530f421ab242dc2182ceaffec9.bindPopup(popup_e5189f12c939a3fd9e13a59e10384c21)
+        ;
+
+        
+    
+    
+                marker_43ed66530f421ab242dc2182ceaffec9.setIcon(icon_d6edc181340f3725fcf48abac0bfb11d);
+            
+    
+            var marker_776b1901a0ea0e3cf681081411e00b9f = L.marker(
+                [11.2888889, 76.5524999888889],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_eb0903b47cca1f481b30ad3012b713d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06f64122d61dcf6f63e7d0c089b3436b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40f8a8573a3505620b41c8093272a2a9 = $(`<div id="html_40f8a8573a3505620b41c8093272a2a9" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kundah<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_06f64122d61dcf6f63e7d0c089b3436b.setContent(html_40f8a8573a3505620b41c8093272a2a9);
+            
+        
+
+        marker_776b1901a0ea0e3cf681081411e00b9f.bindPopup(popup_06f64122d61dcf6f63e7d0c089b3436b)
+        ;
+
+        
+    
+    
+                marker_776b1901a0ea0e3cf681081411e00b9f.setIcon(icon_eb0903b47cca1f481b30ad3012b713d2);
+            
+    
+            var marker_259289035b40ac4ebf1768e5512ca19e = L.marker(
+                [11.4083333444444, 76.7330555444444],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_df7fffd95e19469a093fdef337c1e148 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a9c46b7e008d290aa045b1ebfaad327 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_325b595acf003e4269eadd88eebbe9d9 = $(`<div id="html_325b595acf003e4269eadd88eebbe9d9" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Buttercombai<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_9a9c46b7e008d290aa045b1ebfaad327.setContent(html_325b595acf003e4269eadd88eebbe9d9);
+            
+        
+
+        marker_259289035b40ac4ebf1768e5512ca19e.bindPopup(popup_9a9c46b7e008d290aa045b1ebfaad327)
+        ;
+
+        
+    
+    
+                marker_259289035b40ac4ebf1768e5512ca19e.setIcon(icon_df7fffd95e19469a093fdef337c1e148);
+            
+    
+            var marker_cac025a5ea7391ee3e3cf1f98c500b1c = L.marker(
+                [11.2916666777778, 76.5719444333333],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_717b1ead60a11808047a7ffa0549cabe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_696402f044f9a436157ea17283d7384a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b156c9ddc97530970c8d87825a3bd104 = $(`<div id="html_b156c9ddc97530970c8d87825a3bd104" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kundah<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_696402f044f9a436157ea17283d7384a.setContent(html_b156c9ddc97530970c8d87825a3bd104);
+            
+        
+
+        marker_cac025a5ea7391ee3e3cf1f98c500b1c.bindPopup(popup_696402f044f9a436157ea17283d7384a)
+        ;
+
+        
+    
+    
+                marker_cac025a5ea7391ee3e3cf1f98c500b1c.setIcon(icon_717b1ead60a11808047a7ffa0549cabe);
+            
+    
+            var marker_140476151fa0c2c493605fd4ff6958c7 = L.marker(
+                [11.4055555666667, 76.7330555444444],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_2f950282ef7f5bc7778e098a0a9e6392 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44034708a3b3250e4238642b28a34dac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e279e848216b5c1c13fd5464d9d718ea = $(`<div id="html_e279e848216b5c1c13fd5464d9d718ea" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Buttercombai<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_44034708a3b3250e4238642b28a34dac.setContent(html_e279e848216b5c1c13fd5464d9d718ea);
+            
+        
+
+        marker_140476151fa0c2c493605fd4ff6958c7.bindPopup(popup_44034708a3b3250e4238642b28a34dac)
+        ;
+
+        
+    
+    
+                marker_140476151fa0c2c493605fd4ff6958c7.setIcon(icon_2f950282ef7f5bc7778e098a0a9e6392);
+            
+    
+            var marker_74057eec8efb562a0c8122d5800c6456 = L.marker(
+                [10.1694444555556, 77.0636111],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_a3ab4e42a2a55053450367d811cc5c88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5cdbfa77b9e7b9c2808f78b35bf71e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6607cf013584b8da256844cfc10fa37a = $(`<div id="html_6607cf013584b8da256844cfc10fa37a" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Devikulam<br>         <b>Place:</b> Vaguvarrai<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_f5cdbfa77b9e7b9c2808f78b35bf71e6.setContent(html_6607cf013584b8da256844cfc10fa37a);
+            
+        
+
+        marker_74057eec8efb562a0c8122d5800c6456.bindPopup(popup_f5cdbfa77b9e7b9c2808f78b35bf71e6)
+        ;
+
+        
+    
+    
+                marker_74057eec8efb562a0c8122d5800c6456.setIcon(icon_a3ab4e42a2a55053450367d811cc5c88);
+            
+    
+            var marker_30a2f570dcd0f972eb5f8d042ebdf475 = L.marker(
+                [11.2916666777778, 76.5691666555556],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_5bc588684c5066609d6ac37cbcf13480 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4686ec88d048595787b46c18eb63a190 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02c2e932d25ac7013a24bfd93412a6cd = $(`<div id="html_02c2e932d25ac7013a24bfd93412a6cd" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kundah<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_4686ec88d048595787b46c18eb63a190.setContent(html_02c2e932d25ac7013a24bfd93412a6cd);
+            
+        
+
+        marker_30a2f570dcd0f972eb5f8d042ebdf475.bindPopup(popup_4686ec88d048595787b46c18eb63a190)
+        ;
+
+        
+    
+    
+                marker_30a2f570dcd0f972eb5f8d042ebdf475.setIcon(icon_5bc588684c5066609d6ac37cbcf13480);
+            
+    
+            var marker_90ee2cbe09c73d07a3884ee8a3b4400e = L.marker(
+                [11.3472222333333, 76.5524999888889],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_0b11903bafed3fd10412a065ca106f5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e058c2f4082a420c8938d9d7cfa19bc0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5148553195fb8eb26ad242fc711eac87 = $(`<div id="html_5148553195fb8eb26ad242fc711eac87" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_e058c2f4082a420c8938d9d7cfa19bc0.setContent(html_5148553195fb8eb26ad242fc711eac87);
+            
+        
+
+        marker_90ee2cbe09c73d07a3884ee8a3b4400e.bindPopup(popup_e058c2f4082a420c8938d9d7cfa19bc0)
+        ;
+
+        
+    
+    
+                marker_90ee2cbe09c73d07a3884ee8a3b4400e.setIcon(icon_0b11903bafed3fd10412a065ca106f5a);
+            
+    
+            var marker_70fb2c2714eb62107d410da03cec9a13 = L.marker(
+                [10.1722222333333, 77.0636111],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_ed598b31cce0628f3328eef93d95d316 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1733a31a9f4ec3418e9d7e8736c2fdb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0607734968e31bb6917b3789fb6a154 = $(`<div id="html_e0607734968e31bb6917b3789fb6a154" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kothamangalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_d1733a31a9f4ec3418e9d7e8736c2fdb.setContent(html_e0607734968e31bb6917b3789fb6a154);
+            
+        
+
+        marker_70fb2c2714eb62107d410da03cec9a13.bindPopup(popup_d1733a31a9f4ec3418e9d7e8736c2fdb)
+        ;
+
+        
+    
+    
+                marker_70fb2c2714eb62107d410da03cec9a13.setIcon(icon_ed598b31cce0628f3328eef93d95d316);
+            
+    
+            var marker_6a8e625ef6c2ed34ada2ce11444a43e1 = L.marker(
+                [11.4027777888889, 76.7413888777778],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_e10f1ec5fd4be777d92138f66943d5c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4fd55c5baddb9a74a3409b40be2f6959 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea54f99a324796d872d6a819cd3f2a1d = $(`<div id="html_ea54f99a324796d872d6a819cd3f2a1d" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Udhagamandalam<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_4fd55c5baddb9a74a3409b40be2f6959.setContent(html_ea54f99a324796d872d6a819cd3f2a1d);
+            
+        
+
+        marker_6a8e625ef6c2ed34ada2ce11444a43e1.bindPopup(popup_4fd55c5baddb9a74a3409b40be2f6959)
+        ;
+
+        
+    
+    
+                marker_6a8e625ef6c2ed34ada2ce11444a43e1.setIcon(icon_e10f1ec5fd4be777d92138f66943d5c2);
+            
+    
+            var marker_547f0be2ecb352839334bdaa1c34d855 = L.marker(
+                [11.4000000111111, 76.7386111],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_b17dcb82341f824a9a6d3696b357ac68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_187092050d2963af758353f4477d48e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14ef381b13e7849f702bd0859c5ec63d = $(`<div id="html_14ef381b13e7849f702bd0859c5ec63d" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_187092050d2963af758353f4477d48e2.setContent(html_14ef381b13e7849f702bd0859c5ec63d);
+            
+        
+
+        marker_547f0be2ecb352839334bdaa1c34d855.bindPopup(popup_187092050d2963af758353f4477d48e2)
+        ;
+
+        
+    
+    
+                marker_547f0be2ecb352839334bdaa1c34d855.setIcon(icon_b17dcb82341f824a9a6d3696b357ac68);
+            
+    
+            var marker_f8b933f73d0538cf158eaf4ef5481cec = L.marker(
+                [11.3500000111111, 76.5552777666667],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_1f432085fd1ae9541eb22ca1b0a24319 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_450a2a981dd2c6fff7edd140d1a52e4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1df834fe540d94b44dd18469bb89b2e8 = $(`<div id="html_1df834fe540d94b44dd18469bb89b2e8" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_450a2a981dd2c6fff7edd140d1a52e4a.setContent(html_1df834fe540d94b44dd18469bb89b2e8);
+            
+        
+
+        marker_f8b933f73d0538cf158eaf4ef5481cec.bindPopup(popup_450a2a981dd2c6fff7edd140d1a52e4a)
+        ;
+
+        
+    
+    
+                marker_f8b933f73d0538cf158eaf4ef5481cec.setIcon(icon_1f432085fd1ae9541eb22ca1b0a24319);
+            
+    
+            var marker_bef0398515072a70fdfcfd0c61e62ab5 = L.marker(
+                [11.2972222333333, 76.5552777666667],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_76e4d55f6954b804d0f547aa71ce3d6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b3279d37cd99e4caee6cfaa72ed2bc6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5cac4687eae7eb68b4574af4b3e39d0 = $(`<div id="html_b5cac4687eae7eb68b4574af4b3e39d0" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kundah<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_0b3279d37cd99e4caee6cfaa72ed2bc6.setContent(html_b5cac4687eae7eb68b4574af4b3e39d0);
+            
+        
+
+        marker_bef0398515072a70fdfcfd0c61e62ab5.bindPopup(popup_0b3279d37cd99e4caee6cfaa72ed2bc6)
+        ;
+
+        
+    
+    
+                marker_bef0398515072a70fdfcfd0c61e62ab5.setIcon(icon_76e4d55f6954b804d0f547aa71ce3d6c);
+            
+    
+            var marker_7c7a41b822f37dbe5fd2f8d59574f117 = L.marker(
+                [11.3500000111111, 76.5580555444444],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_34bb4cd68787d90ae81cb05440a3e497 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87b6b043960c5dd2ab07c91d91f9537a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b38b6d0246ac96b3def0c341d777fdc9 = $(`<div id="html_b38b6d0246ac96b3def0c341d777fdc9" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_87b6b043960c5dd2ab07c91d91f9537a.setContent(html_b38b6d0246ac96b3def0c341d777fdc9);
+            
+        
+
+        marker_7c7a41b822f37dbe5fd2f8d59574f117.bindPopup(popup_87b6b043960c5dd2ab07c91d91f9537a)
+        ;
+
+        
+    
+    
+                marker_7c7a41b822f37dbe5fd2f8d59574f117.setIcon(icon_34bb4cd68787d90ae81cb05440a3e497);
+            
+    
+            var marker_d2ab6c17a26149892e06b166757d01e2 = L.marker(
+                [11.2916666777778, 76.5524999888889],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_d6efcbce8266ba8a3b80df3d4ffe0365 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_981da5fec4c7f86c0b3455f592bcedea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a86b57d1cec4fccba00d672fe329c9a = $(`<div id="html_0a86b57d1cec4fccba00d672fe329c9a" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kundah<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_981da5fec4c7f86c0b3455f592bcedea.setContent(html_0a86b57d1cec4fccba00d672fe329c9a);
+            
+        
+
+        marker_d2ab6c17a26149892e06b166757d01e2.bindPopup(popup_981da5fec4c7f86c0b3455f592bcedea)
+        ;
+
+        
+    
+    
+                marker_d2ab6c17a26149892e06b166757d01e2.setIcon(icon_d6efcbce8266ba8a3b80df3d4ffe0365);
+            
+    
+            var marker_87be8576fd84ebcffeb700f31ea920e0 = L.marker(
+                [11.3472222333333, 76.5552777666667],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_c98552dd8c106ee7e0747bfeae8809d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c47296344b9e9e78c8e50a3f3f1bbb05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a82dffc8afee153b610e0b8b4d767e87 = $(`<div id="html_a82dffc8afee153b610e0b8b4d767e87" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_c47296344b9e9e78c8e50a3f3f1bbb05.setContent(html_a82dffc8afee153b610e0b8b4d767e87);
+            
+        
+
+        marker_87be8576fd84ebcffeb700f31ea920e0.bindPopup(popup_c47296344b9e9e78c8e50a3f3f1bbb05)
+        ;
+
+        
+    
+    
+                marker_87be8576fd84ebcffeb700f31ea920e0.setIcon(icon_c98552dd8c106ee7e0747bfeae8809d3);
+            
+    
+            var marker_ece036b2eb1bdd8b2de6906ab3570e10 = L.marker(
+                [11.3388889, 76.5774999888889],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_f91169e9554e5bdc2b7c9b435adfe611 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_619473ac522cbfd6b23295113e6db5e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bad3647593082002ad6b16a5b53eff53 = $(`<div id="html_bad3647593082002ad6b16a5b53eff53" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_619473ac522cbfd6b23295113e6db5e7.setContent(html_bad3647593082002ad6b16a5b53eff53);
+            
+        
+
+        marker_ece036b2eb1bdd8b2de6906ab3570e10.bindPopup(popup_619473ac522cbfd6b23295113e6db5e7)
+        ;
+
+        
+    
+    
+                marker_ece036b2eb1bdd8b2de6906ab3570e10.setIcon(icon_f91169e9554e5bdc2b7c9b435adfe611);
+            
+    
+            var marker_58bff46a7587287240aa4244329f9db0 = L.marker(
+                [11.4055555666667, 76.7358333222222],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_5a44cbdc68b026177c03f7a3a2eb2a66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_094a450ae35e6158b6735805fe9f2720 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ff6d0d87d88c0060784694933cf9da3 = $(`<div id="html_9ff6d0d87d88c0060784694933cf9da3" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Buttercombai<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_094a450ae35e6158b6735805fe9f2720.setContent(html_9ff6d0d87d88c0060784694933cf9da3);
+            
+        
+
+        marker_58bff46a7587287240aa4244329f9db0.bindPopup(popup_094a450ae35e6158b6735805fe9f2720)
+        ;
+
+        
+    
+    
+                marker_58bff46a7587287240aa4244329f9db0.setIcon(icon_5a44cbdc68b026177c03f7a3a2eb2a66);
+            
+    
+            var marker_b72868e452b22c24207a4725cf9365eb = L.marker(
+                [11.2888889, 76.5497222111111],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_0476fc41cd2a50be91ecde0fa645f6af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_defa1ccc6700821a14be9f06d2b271a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7d28a9059edc4c56ad658723b3e8dd5 = $(`<div id="html_b7d28a9059edc4c56ad658723b3e8dd5" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kundah<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_defa1ccc6700821a14be9f06d2b271a9.setContent(html_b7d28a9059edc4c56ad658723b3e8dd5);
+            
+        
+
+        marker_b72868e452b22c24207a4725cf9365eb.bindPopup(popup_defa1ccc6700821a14be9f06d2b271a9)
+        ;
+
+        
+    
+    
+                marker_b72868e452b22c24207a4725cf9365eb.setIcon(icon_0476fc41cd2a50be91ecde0fa645f6af);
+            
+    
+            var marker_000b323e3ea5a2b89930705853275a5e = L.marker(
+                [11.3027777888889, 76.5469444333333],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_cb5854aeb68635760d0867586154cfc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8955593fba56cdefddbf2872d945d16e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14eb6c40cd2fb945ab7f3830583f85c3 = $(`<div id="html_14eb6c40cd2fb945ab7f3830583f85c3" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kundah<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_8955593fba56cdefddbf2872d945d16e.setContent(html_14eb6c40cd2fb945ab7f3830583f85c3);
+            
+        
+
+        marker_000b323e3ea5a2b89930705853275a5e.bindPopup(popup_8955593fba56cdefddbf2872d945d16e)
+        ;
+
+        
+    
+    
+                marker_000b323e3ea5a2b89930705853275a5e.setIcon(icon_cb5854aeb68635760d0867586154cfc6);
+            
+    
+            var marker_357ae709bb3abebe015c429cac0439de = L.marker(
+                [10.1722222333333, 77.0608333222222],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_0c3a7c87158234a1da75b019106f751a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d70f486118fe575da0ffbf55baa0dd63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d60ceec398e57485b893e2de2994f11 = $(`<div id="html_5d60ceec398e57485b893e2de2994f11" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Kothamangalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_d70f486118fe575da0ffbf55baa0dd63.setContent(html_5d60ceec398e57485b893e2de2994f11);
+            
+        
+
+        marker_357ae709bb3abebe015c429cac0439de.bindPopup(popup_d70f486118fe575da0ffbf55baa0dd63)
+        ;
+
+        
+    
+    
+                marker_357ae709bb3abebe015c429cac0439de.setIcon(icon_0c3a7c87158234a1da75b019106f751a);
+            
+    
+            var marker_d37c0e742c3e28b83ed58d25fc5d9b1e = L.marker(
+                [11.3361111222222, 76.5774999888889],
+                {
+}
+            ).addTo(marker_cluster_24718e0554af4a1426a44d1fa6b73740);
+        
+    
+            var icon_3bea44c19aef1391c0686d12856bad3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bab4c8ebce93d31ea1685e81a25c4025 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d8c11d712ac881716cea3ee3a929f23 = $(`<div id="html_2d8c11d712ac881716cea3ee3a929f23" style="width: 100.0%; height: 100.0%;">         <b>District:</b> Udhagamandalam<br>         <b>Place:</b> Unknown<br>         <b>Risk:</b> ⚠️ Landslide Risk     </div>`)[0];
+                popup_bab4c8ebce93d31ea1685e81a25c4025.setContent(html_2d8c11d712ac881716cea3ee3a929f23);
+            
+        
+
+        marker_d37c0e742c3e28b83ed58d25fc5d9b1e.bindPopup(popup_bab4c8ebce93d31ea1685e81a25c4025)
+        ;
+
+        
+    
+    
+                marker_d37c0e742c3e28b83ed58d25fc5d9b1e.setIcon(icon_3bea44c19aef1391c0686d12856bad3a);
+            
+    
+            marker_cluster_24718e0554af4a1426a44d1fa6b73740.addTo(map_bf470371762837d6716fb031bb2c83dc);
+        
+</script>
+</html>

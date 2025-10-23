@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_10777f1cdadf072a7ca4339010b4d032 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_10777f1cdadf072a7ca4339010b4d032" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_10777f1cdadf072a7ca4339010b4d032 = L.map(
+                "map_10777f1cdadf072a7ca4339010b4d032",
+                {
+                    center: [10.2, 76.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_74a80c0e626a84a3d079df710530e7ea = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_74a80c0e626a84a3d079df710530e7ea.addTo(map_10777f1cdadf072a7ca4339010b4d032);
+        
+    
+            var marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_bc8e22681b73a1e8c36321f53765886b = L.marker(
+                [11.654, 76.2033],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_2d6ad5a6b903ba5abc95f21b6c51fdd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_642debcdc304f5b85a920c1551deaf8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f08502a48bd3b7a13af5ae6c3128190f = $(`<div id="html_f08502a48bd3b7a13af5ae6c3128190f" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Wayanad<br>     <b>Place:</b> Mundakkai<br>     <b>Year:</b> 2024<br>     </div>`)[0];
+                popup_642debcdc304f5b85a920c1551deaf8c.setContent(html_f08502a48bd3b7a13af5ae6c3128190f);
+            
+        
+
+        marker_bc8e22681b73a1e8c36321f53765886b.bindPopup(popup_642debcdc304f5b85a920c1551deaf8c)
+        ;
+
+        
+    
+    
+                marker_bc8e22681b73a1e8c36321f53765886b.setIcon(icon_2d6ad5a6b903ba5abc95f21b6c51fdd3);
+            
+    
+            var marker_061058850a2c4e6437cb06f7adc94aca = L.marker(
+                [11.613, 76.241],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_c5872edb3d4e678e77dd93d4f4bd3324 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fb2a95124ab1b0b1c6034a089d30915 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_838769582658981eb988bf683e4abe0a = $(`<div id="html_838769582658981eb988bf683e4abe0a" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Wayanad<br>     <b>Place:</b> Chooralmala<br>     <b>Year:</b> 2024<br>     </div>`)[0];
+                popup_8fb2a95124ab1b0b1c6034a089d30915.setContent(html_838769582658981eb988bf683e4abe0a);
+            
+        
+
+        marker_061058850a2c4e6437cb06f7adc94aca.bindPopup(popup_8fb2a95124ab1b0b1c6034a089d30915)
+        ;
+
+        
+    
+    
+                marker_061058850a2c4e6437cb06f7adc94aca.setIcon(icon_c5872edb3d4e678e77dd93d4f4bd3324);
+            
+    
+            var marker_17778a16ca2080308d56e3eb0a71dff9 = L.marker(
+                [11.522, 76.2373],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_c7c84669e0252714a8fe524984904e17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34dc4cc1f6ab6deb4996f91006c410f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6836b1042a733f140eb5e624c0abe462 = $(`<div id="html_6836b1042a733f140eb5e624c0abe462" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Wayanad<br>     <b>Place:</b> Vellarimala<br>     <b>Year:</b> 2024<br>     </div>`)[0];
+                popup_34dc4cc1f6ab6deb4996f91006c410f7.setContent(html_6836b1042a733f140eb5e624c0abe462);
+            
+        
+
+        marker_17778a16ca2080308d56e3eb0a71dff9.bindPopup(popup_34dc4cc1f6ab6deb4996f91006c410f7)
+        ;
+
+        
+    
+    
+                marker_17778a16ca2080308d56e3eb0a71dff9.setIcon(icon_c7c84669e0252714a8fe524984904e17);
+            
+    
+            var marker_9b9aa94bca92d37bad0a65e0ffdddc59 = L.marker(
+                [11.6196, 75.8994],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_3960481f2e6eee1dcd4e6957552d01cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b05a0d6949cc1aff0a102aa318d5f390 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82bc6ad32c702a18b488fdea1f82591d = $(`<div id="html_82bc6ad32c702a18b488fdea1f82591d" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Kozhikode<br>     <b>Place:</b> Vilangad<br>     <b>Year:</b> 2024<br>     </div>`)[0];
+                popup_b05a0d6949cc1aff0a102aa318d5f390.setContent(html_82bc6ad32c702a18b488fdea1f82591d);
+            
+        
+
+        marker_9b9aa94bca92d37bad0a65e0ffdddc59.bindPopup(popup_b05a0d6949cc1aff0a102aa318d5f390)
+        ;
+
+        
+    
+    
+                marker_9b9aa94bca92d37bad0a65e0ffdddc59.setIcon(icon_3960481f2e6eee1dcd4e6957552d01cc);
+            
+    
+            var marker_9baa82495339141664fbf71260c7edc6 = L.marker(
+                [9.85, 76.98],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_b6903b571a765fc2ab25a456f61dc8f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aeebe7c206b03e49be40ca40f044b42a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a39225e33b9ef4b21534966603da59f3 = $(`<div id="html_a39225e33b9ef4b21534966603da59f3" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Idukki<br>     <b>Place:</b> Cheriyar<br>     <b>Year:</b> 2023<br>     </div>`)[0];
+                popup_aeebe7c206b03e49be40ca40f044b42a.setContent(html_a39225e33b9ef4b21534966603da59f3);
+            
+        
+
+        marker_9baa82495339141664fbf71260c7edc6.bindPopup(popup_aeebe7c206b03e49be40ca40f044b42a)
+        ;
+
+        
+    
+    
+                marker_9baa82495339141664fbf71260c7edc6.setIcon(icon_b6903b571a765fc2ab25a456f61dc8f0);
+            
+    
+            var marker_830484e39e3a6ee0a2f496ca345ebfdb = L.marker(
+                [9.8236, 76.8703],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_78c2ada54151a0982bd388da2ab945b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd8485a529a16f906332cd37128c3403 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b066aa2506870623227e5ac88bf2ce4 = $(`<div id="html_8b066aa2506870623227e5ac88bf2ce4" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Idukki<br>     <b>Place:</b> Kudayathoor<br>     <b>Year:</b> 2022<br>     </div>`)[0];
+                popup_cd8485a529a16f906332cd37128c3403.setContent(html_8b066aa2506870623227e5ac88bf2ce4);
+            
+        
+
+        marker_830484e39e3a6ee0a2f496ca345ebfdb.bindPopup(popup_cd8485a529a16f906332cd37128c3403)
+        ;
+
+        
+    
+    
+                marker_830484e39e3a6ee0a2f496ca345ebfdb.setIcon(icon_78c2ada54151a0982bd388da2ab945b6);
+            
+    
+            var marker_2cb074220dec6f42a52e740fb085bb55 = L.marker(
+                [9.5217, 76.8487],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_6242e1c068cf858727f372b97f6efa4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_feac29b45017541b35d5500f07b7aca3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a97017c2d010156896f53ea0056051e = $(`<div id="html_5a97017c2d010156896f53ea0056051e" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Kottayam<br>     <b>Place:</b> Koottickal<br>     <b>Year:</b> 2021<br>     </div>`)[0];
+                popup_feac29b45017541b35d5500f07b7aca3.setContent(html_5a97017c2d010156896f53ea0056051e);
+            
+        
+
+        marker_2cb074220dec6f42a52e740fb085bb55.bindPopup(popup_feac29b45017541b35d5500f07b7aca3)
+        ;
+
+        
+    
+    
+                marker_2cb074220dec6f42a52e740fb085bb55.setIcon(icon_6242e1c068cf858727f372b97f6efa4f);
+            
+    
+            var marker_88f536291315c615b9a0609fb46827ca = L.marker(
+                [9.5461, 77.0172],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_aa95dcbcbe2309ecaded01283327e981 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4576e57c0254de223c494ea48042c415 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2bc770e2f3fd2594cb4d545a006855dc = $(`<div id="html_2bc770e2f3fd2594cb4d545a006855dc" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Idukki<br>     <b>Place:</b> Kokkayar<br>     <b>Year:</b> 2021<br>     </div>`)[0];
+                popup_4576e57c0254de223c494ea48042c415.setContent(html_2bc770e2f3fd2594cb4d545a006855dc);
+            
+        
+
+        marker_88f536291315c615b9a0609fb46827ca.bindPopup(popup_4576e57c0254de223c494ea48042c415)
+        ;
+
+        
+    
+    
+                marker_88f536291315c615b9a0609fb46827ca.setIcon(icon_aa95dcbcbe2309ecaded01283327e981);
+            
+    
+            var marker_7841b889022083ea1034504716aefac2 = L.marker(
+                [10.0946, 77.0128],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_f6e43d92b583c5e4a7e20087409dc5f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c6276c4f56ea17430fa9e43df2f3074 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f810d0f5528c91ee1bef771042ef7449 = $(`<div id="html_f810d0f5528c91ee1bef771042ef7449" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Idukki<br>     <b>Place:</b> Pettimudi<br>     <b>Year:</b> 2020<br>     </div>`)[0];
+                popup_8c6276c4f56ea17430fa9e43df2f3074.setContent(html_f810d0f5528c91ee1bef771042ef7449);
+            
+        
+
+        marker_7841b889022083ea1034504716aefac2.bindPopup(popup_8c6276c4f56ea17430fa9e43df2f3074)
+        ;
+
+        
+    
+    
+                marker_7841b889022083ea1034504716aefac2.setIcon(icon_f6e43d92b583c5e4a7e20087409dc5f5);
+            
+    
+            var marker_b06bd21758806656495e3de46f5f4591 = L.marker(
+                [11.15, 76.15],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_274278a6e6de8ae969cf200e96a59bee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f1db8301d14f03c1b50c16b240af6ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95dbb0b8db146771b0bbdeca860caa38 = $(`<div id="html_95dbb0b8db146771b0bbdeca860caa38" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Malappuram<br>     <b>Place:</b> Kavalappara<br>     <b>Year:</b> 2019<br>     </div>`)[0];
+                popup_1f1db8301d14f03c1b50c16b240af6ed.setContent(html_95dbb0b8db146771b0bbdeca860caa38);
+            
+        
+
+        marker_b06bd21758806656495e3de46f5f4591.bindPopup(popup_1f1db8301d14f03c1b50c16b240af6ed)
+        ;
+
+        
+    
+    
+                marker_b06bd21758806656495e3de46f5f4591.setIcon(icon_274278a6e6de8ae969cf200e96a59bee);
+            
+    
+            var marker_2a1b12db1e082b80409675b66df1c1a3 = L.marker(
+                [11.6194, 76.1664],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_b3e9847db1835276c453a44fec013a5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23ab969ad496bb9fb71e7bf047a27d4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0909151e2297f26744640933533ad8c9 = $(`<div id="html_0909151e2297f26744640933533ad8c9" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Wayanad<br>     <b>Place:</b> Puthumala<br>     <b>Year:</b> 2019<br>     </div>`)[0];
+                popup_23ab969ad496bb9fb71e7bf047a27d4a.setContent(html_0909151e2297f26744640933533ad8c9);
+            
+        
+
+        marker_2a1b12db1e082b80409675b66df1c1a3.bindPopup(popup_23ab969ad496bb9fb71e7bf047a27d4a)
+        ;
+
+        
+    
+    
+                marker_2a1b12db1e082b80409675b66df1c1a3.setIcon(icon_b3e9847db1835276c453a44fec013a5a);
+            
+    
+            var marker_6856ab453835fb0b7a21b1659d0241a7 = L.marker(
+                [9.849, 77.084],
+                {
+}
+            ).addTo(marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6);
+        
+    
+            var icon_4a6cce93f585c9dd4d2c7c3b9647eb82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca26e25d0c379bed563cf96fcfa3bde1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ed837e7b87e1809680ea1f58a067282 = $(`<div id="html_7ed837e7b87e1809680ea1f58a067282" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Idukki<br>     <b>Place:</b> General<br>     <b>Year:</b> 2018<br>     </div>`)[0];
+                popup_ca26e25d0c379bed563cf96fcfa3bde1.setContent(html_7ed837e7b87e1809680ea1f58a067282);
+            
+        
+
+        marker_6856ab453835fb0b7a21b1659d0241a7.bindPopup(popup_ca26e25d0c379bed563cf96fcfa3bde1)
+        ;
+
+        
+    
+    
+                marker_6856ab453835fb0b7a21b1659d0241a7.setIcon(icon_4a6cce93f585c9dd4d2c7c3b9647eb82);
+            
+    
+            marker_cluster_3cba00876f30cb2d5bbeb8e3124389a6.addTo(map_10777f1cdadf072a7ca4339010b4d032);
+        
+</script>
+</html>
